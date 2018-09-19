@@ -77,7 +77,10 @@ toggleReset () {
     const { sessionTime, breakTime, running } = this.state;
     return (
       <div className='main-container'>
-        <Timer
+        <Header />
+        <div className="row">
+          <div className="col-md-3" />
+          <Timer
           updateSessionPlus={this.updateSessionPlus}
           updateSessionMinus={this.updateSessionMinus}
           updateBreakPlus={this.updateBreakPlus}
@@ -88,11 +91,14 @@ toggleReset () {
           sessionTime={sessionTime}
           breakTime={breakTime}
            />
-        <Pomodoro
+           <Pomodoro
           ref={(el) => this.clock = el}
           running={running}
           sessionTime={sessionTime}
           breakTime={breakTime} />
+          <div className="col-md-3" />
+        </div>
+        <Footer />
       </div>
     );
   }

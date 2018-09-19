@@ -17,7 +17,7 @@ import React, { Component } from "react";
 export default class Timer extends React.Component {
   render() {
     return (
-      <div className='input-panel'>
+      <div className='col-md-3 input-panel'>
           <div id="break">
           <span id="break-label">Break Length</span>
           <br />

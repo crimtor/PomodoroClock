@@ -85,7 +85,7 @@ export default class Pomodoro extends React.Component {
   render() {
     const { sessionTime, breakTime, running } = this.props;
       return (
-        <div>
+        <div className="col-md-3">
           <span id="timer-label">{(this.state.isBreak) ? 'Break' : 'Session'}</span>
           <div id="time-left" className={'clock ' + ((this.state.isBreak) ? 'break' : 'session')}>
           {

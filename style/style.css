@@ -13,6 +13,12 @@ span {
   text-align: center;
   font-size: 2em;
 }
+.col-md-3{
+  margin-top: 2em !important;
+}
+.navbar-brand {
+  margin-left: 30px !important;
+}
 .main-container {
   color: #fff;
   text-align: center;
